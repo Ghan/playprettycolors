@@ -5,7 +5,46 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+		<div id="header-space"></div>
+		<div id="header-outer" data-using-secondary="0" data-using-logo="1" data-logo-height="100" data-padding="1" data-header-resize="1">
+			<header id="top">
+				<div class="container">
+					<div class="row">
+
+						<div class="col span_3">
+
+							<a id="logo" href="http://www.prettycolors.tv">
+
+								<img  alt="Pretty Colors" src="http://www.prettycolors.tv/wp-content/uploads/2013/11/logo_7_w_type4.png" /> 
+							</a>
+
+						</div><!--/span_3-->
+
+						<div class="col span_9 col_last">
+
+							<a href="#" id="toggle-nav"><i class="icon-reorder"></i></a>
+
+
+									<!--mobile cart link-->
+							<nav>
+								<ul class="sf-menu">	
+									<li id="menu-item-862" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-554 menu-item-862"><a href="http://www.prettycolors.tv/">Home</a></li>
+		<li id="menu-item-864" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-864"><a href="http://www.prettycolors.tv/blog">Blog</a></li>
+		<li id="menu-item-862" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-554 current_page_item menu-item-862"><a href="http://play.prettycolors.tv/">Play</a></li>
+		<li id="menu-item-1083" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1083"><a href="http://www.prettycolors.tv/about">About</a></li>
+		<li id="menu-item-867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-867"><a href="http://www.prettycolors.tv/shop">Shop</a></li>
+									<li id="search-btn"><div><a href=""><span class="icon-salient-search" aria-hidden="true"></span></a></div></li>
+								</ul>
+							</nav>
+
+						</div><!--/span_9-->
+
+					</div><!--/row-->
+
+				</div><!--/container-->
+
+			</header>
+
+		</div><!--/header-outer-->
   </body>
 </html>

@@ -7,7 +7,8 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  , sass = require('node-sass');
 
 var app = express();
 
@@ -19,6 +20,13 @@ app.configure(function(){
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
+  app.use(
+      sass.middleware({
+          src: __dirname + '/sass', //where the sass files are 
+          dest: __dirname + '/public/stylesheets', //where css should go
+          debug: true // obvious
+      })
+  );
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
 });
