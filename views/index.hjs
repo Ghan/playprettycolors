@@ -28,7 +28,8 @@
 		</div>
 	</header>
 	<div id="main">
-		
+		<div id="object"></div>
 	</div><!--main-->
+	<script src="/javascripts/ex1.js"></script>
   </body>
 </html>
