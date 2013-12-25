@@ -1,11 +1,17 @@
 
-var NUM_PARTICLES = ( ( ROWS = 100 ) * ( COLS = 220 ) ),
-    THICKNESS = Math.pow( 80, 2 ),
+var THICKNESS = Math.pow( 80, 2 ),
     SPACING = 4,
-    MARGIN = 100,
+    MARGIN = 25,
     COLOR = 220,
     DRAG = 0.95,
     EASE = 0.25,
+    
+    screenWidth,
+    screenHeight,
+    
+    ROWS,
+    COLS,
+    NUM_PARTICLES,
     
     /*
     
@@ -44,6 +50,13 @@ particle = {
 };
 
 function init() {
+  
+  screenWidth = window.innerWidth;
+  screenHeight = window.innerHeight;
+  
+  ROWS = Math.round((screenHeight - 2*MARGIN) / SPACING);
+  COLS = Math.round((screenWidth - 2*MARGIN) / SPACING);
+  NUM_PARTICLES = ROWS * COLS;
 
   container = document.getElementById( 'object' );
   canvas = document.createElement( 'canvas' );
